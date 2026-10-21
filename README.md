@@ -1,5 +1,5 @@
 # Fireplace (Obsidian Theme)
-This is a **Fireplace** theme for [Obsidian](https://obsidian.md/). The color palette is generated from my own photos of a fireplace and glowing embers and is the same palette I use for my [Omarchy](https://omarchy.org) theme `pics-fireplace` (see my [dotfiles](https://github.com/sspaeti/dotfiles/tree/master/omarchy/.config/omarchy/themes/pics-fireplace)). It supports dark and light mode.
+This is a **Fireplace** theme for [Obsidian](https://obsidian.md/). The color palette is generated from my own photos of a fireplace and glowing embers and is the same palette I use for my [Omarchy](https://omarchy.org) theme [omarchy-fireplace-theme](https://github.com/sspaeti/omarchy-fireplace-theme). It supports dark and light mode.
 
 Installation: Simply search `Fireplace` in the Obsidian Community Themes and Install. Or if manually, copy the `theme.css` file to `.obsidian/themes/Fireplace/` in your vault directory and reload Obsidian for it to take effect.
 
