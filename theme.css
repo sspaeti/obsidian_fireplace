@@ -1,0 +1,667 @@
+:root
+{
+    /* DARK THEME */
+    /* Fireplace — palette generated from fireplace and ember photos (omarchy pics-fireplace) */
+    /* Bg Shades */
+    --emberInk0     : #0b0403; /* darker background */
+    --emberInk1     : #0f0605; /* dark background */
+    --emberInk2     : #140806; /* main background */
+    --emberInk3     : #1d100b; /* raised surface */
+    --emberInk4     : #2b1f1a; /* lighter background */
+    --emberInk5     : #4a1d10; /* selection */
+
+    /* Fg and Comments */
+    --emberFg       : #fbedca; /* foreground */
+    --emberFgBright : #fdf5e2; /* bright foreground */
+    --emberFgDark   : #baad93; /* dark foreground */
+    --emberMuted    : #8a5c48; /* muted */
+    --emberBrown    : #7a3a1e; /* brown */
+
+    /* Flames */
+    --emberAccent   : #f07a2a; /* accent */
+    --emberRed      : #e8452a; /* red */
+    --emberYellow   : #f7b955; /* yellow */
+    --emberOrange   : #f5842e; /* orange */
+    --emberGreen    : #b9b86a; /* green (olive) */
+    --emberCyan     : #d9b27c; /* cyan (sand) */
+    --emberBlue     : #d07a4a; /* blue (copper) */
+    --emberMagenta  : #e08060; /* magenta (salmon) */
+
+    --emberBrightRed     : #eb5f48;
+    --emberBrightYellow  : #f8c675;
+    --emberBrightGreen   : #c4c382;
+    --emberBrightCyan    : #e1c296;
+    --emberBrightBlue    : #d78e65;
+    --emberBrightMagenta : #e5957b;
+
+    /* LIGHT THEME */
+    /* Fireplace Day — warm paper with the same flame hues, darkened for contrast */
+    --hearthWhite0  : #fdf8ef; /* sidebar */
+    --hearthWhite1  : #fbf3e6; /* main background */
+    --hearthWhite2  : #f3e8d6; /* raised surface */
+    --hearthWhite3  : #efe2cd; /* alt surface */
+    --hearthWhite4  : #e5d3b8; /* hover */
+    --hearthGray    : #f1e6d2; /* code background */
+
+    --hearthInk     : #3a2218; /* text */
+    --hearthInkDark : #22120b; /* bold text */
+    --hearthMuted   : #7a5a48; /* muted text */
+    --hearthFaint   : #a68a78; /* faint text */
+
+    --hearthAccent  : #d9671c; /* accent */
+    --hearthRed     : #c0341c;
+    --hearthYellow  : #b8810f;
+    --hearthOrange  : #d2621a;
+    --hearthGreen   : #6f7a2a;
+    --hearthCyan    : #8f6b2a;
+    --hearthBlue    : #a8512a;
+    --hearthMagenta : #b95a3e;
+}
+
+.theme-dark
+{
+    --background-primary:         var(--emberInk2);
+    --background-primary-alt:     var(--emberInk3);
+    --background-secondary:       var(--emberInk1);
+    --background-secondary-alt:   var(--emberInk3);
+    --background-modifier-border: var(--emberInk4);
+    --background-modifier-hover:  var(--emberInk4);
+    --background-modifier-form-field: var(--emberInk1);
+    --interactive-normal:         var(--emberInk4);
+    --interactive-hover:          var(--emberInk5);
+    --text-normal:                var(--emberFg);
+    --text-muted:                 var(--emberFgDark);
+    --text-faint:                 var(--emberMuted);
+    --text-on-accent:             var(--emberInk0);
+    --text-title-h1:              var(--emberRed);
+    --text-title-h2:              var(--emberOrange);
+    --text-title-h3:              var(--emberYellow);
+    --text-title-h4:              var(--emberMagenta);
+    --text-title-h5:              var(--emberCyan);
+    --text-title-h6:              var(--emberGreen);
+    --text-link:                  var(--emberYellow);
+    --text-a:                     var(--emberBrightYellow);
+    --text-a-hover:               var(--emberRed);
+    --text-a-url:                 var(--emberCyan); /* hover internal link, graph view link and standalone links. External links no */
+    --link-color:                 var(--emberAccent);    /* internal wikilinks */
+    --link-color-hover:           var(--text-a-url);
+    --text-mark:                  rgba(247, 185, 85, 0.35); /* emberYellow */
+    --pre-code:                   var(--emberInk1);
+    --text-highlight-bg:          var(--emberInk5);
+    --interactive-accent:         var(--emberAccent); /* vim cursor background AND highlight on right */
+    --interactive-accent-hover:   var(--emberRed);
+    --interactive-before:         var(--emberInk4);
+    --text-accent:                var(--emberAccent);
+    --text-accent-hover:          var(--emberRed);
+    --interactive-accent-rgb:     var(--emberAccent);
+    --inline-code:                var(--emberYellow);
+    --code-block:                 var(--emberFgDark);
+    --code-background:            var(--emberInk1);
+    --code-normal:                var(--emberCyan);
+    --table-border-color:         var(--background-secondary);
+    --vim-cursor-background:      var(--emberYellow);
+    --vim-cursor-color:           var(--emberInk0);
+    --text-selection:             rgba(240, 122, 42, 0.35); /* emberAccent */
+    --text-tag:                   var(--emberMagenta);
+    --task-checkbox:              var(--emberMuted);
+    --table-header:               var(--emberInk3);
+    --table-row-even:             var(--emberInk3);
+    --table-row-odd:              var(--emberInk2);
+    --table-hover:                var(--emberInk4);
+    --bold-color:                 var(--emberFgBright);
+    --text-error:                 var(--emberRed);
+    --text-success:               var(--emberGreen);
+    --graph-line:                 var(--emberMuted);
+    --graph-node:                 var(--emberAccent);
+    --graph-node-focused:         var(--emberYellow);
+    --graph-node-tag:             var(--emberMagenta);
+    --graph-node-attachment:      var(--emberGreen);
+}
+
+.theme-light
+{
+    --background-primary:         var(--hearthWhite1);
+    --background-primary-alt:     var(--hearthWhite2);
+    --background-secondary:       var(--hearthWhite0);
+    --background-secondary-alt:   var(--hearthWhite3);
+    --background-modifier-border: var(--hearthWhite4);
+    --background-modifier-hover:  var(--hearthWhite4);
+    --background-modifier-form-field: var(--hearthWhite0);
+    --interactive-normal:         var(--hearthWhite3);
+    --interactive-hover:          var(--hearthWhite4);
+    --text-normal:                var(--hearthInk);
+    --text-muted:                 var(--hearthMuted);
+    --text-faint:                 var(--hearthFaint);
+    --text-on-accent:             var(--hearthWhite0);
+    --text-title-h1:              var(--hearthRed);
+    --text-title-h2:              var(--hearthOrange);
+    --text-title-h3:              var(--hearthYellow);
+    --text-title-h4:              var(--hearthMagenta);
+    --text-title-h5:              var(--hearthCyan);
+    --text-title-h6:              var(--hearthGreen);
+    --text-link:                  var(--hearthYellow);
+    --text-a:                     var(--hearthBlue);
+    --text-a-hover:               var(--hearthRed);
+    --text-a-url:                 var(--hearthCyan); /* hover internal link, graph view link and standalone links. External links no */
+    --link-color:                 var(--hearthAccent);    /* internal wikilinks */
+    --link-color-hover:           var(--text-a-url);
+    --text-mark:                  rgba(184, 129, 15, 0.3); /* hearthYellow */
+    --pre-code:                   var(--hearthGray);
+    --text-highlight-bg:          var(--hearthWhite4);
+    --interactive-accent:         var(--hearthAccent); /* vim cursor background AND highlight on right */
+    --interactive-accent-hover:   var(--hearthRed);
+    --interactive-before:         var(--hearthWhite4);
+    --text-accent:                var(--hearthAccent);
+    --text-accent-hover:          var(--hearthRed);
+    --interactive-accent-rgb:     var(--hearthAccent);
+    --inline-code:                var(--hearthOrange);
+    --code-block:                 var(--hearthInk);
+    --code-background:            var(--hearthGray);
+    --code-normal:                var(--hearthCyan);
+    --table-border-color:         var(--background-secondary);
+    --vim-cursor-background:      var(--hearthAccent);
+    --vim-cursor-color:           var(--hearthWhite0);
+    --text-selection:             rgba(217, 103, 28, 0.25); /* hearthAccent */
+    --text-tag:                   var(--hearthMagenta);
+    --task-checkbox:              var(--hearthFaint);
+    --table-header:               var(--hearthWhite3);
+    --table-row-even:             var(--hearthWhite2);
+    --table-row-odd:              var(--hearthWhite1);
+    --table-hover:                var(--hearthWhite4);
+    --bold-color:                 var(--hearthInkDark);
+    --text-error:                 var(--hearthRed);
+    --text-success:               var(--hearthGreen);
+    --graph-line:                 var(--hearthFaint);
+    --graph-node:                 var(--hearthAccent);
+    --graph-node-focused:         var(--hearthYellow);
+    --graph-node-tag:             var(--hearthMagenta);
+    --graph-node-attachment:      var(--hearthGreen);
+}
+
+body {
+    --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --font-monospace-theme: 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+body.theme-dark {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+body.theme-light {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none;
+    background-color: var(--pre-code);
+}
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
+{
+    color: var(--interactive-accent-rgb);
+}
+.graph-view.color-text
+{
+    color: var(--text-a-url);
+}
+/*
+.graph-view.color-fill
+{
+    color: var(--background-secondary);
+}
+.graph-view.color-line
+{
+  color: var(--background-modifier-border);
+}
+*/
+
+html,
+body
+{
+    /* font-size: 16px; */
+}
+
+strong
+{
+    font-weight: 600;
+}
+
+.cm-hmd-internal-link
+{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-url);
+    text-decoration: none;
+}
+
+a.tag, a.tag:hover {
+  color: var(--text-tag);
+  background-color: var(--background-secondary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+a.tag:hover {
+    text-decoration: underline;
+}
+
+mark
+{
+    background-color: var(--text-mark);
+}
+
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
+.view-actions a
+{
+    color: var(--text-normal);
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a);
+}
+
+.HyperMD-codeblock-bg
+{
+    background-color: var(--pre-code);
+}
+
+.HyperMD-codeblock
+{
+    line-height: 1.4em;
+    color: var(--code-block);
+}
+
+.HyperMD-codeblock-begin
+{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.HyperMD-codeblock-end
+{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+table {
+    border: 1px solid var(--background-secondary);
+    border-collapse: collapse;
+}
+  
+th {
+    font-weight: 600;
+    border: 0px;
+    text-align: left;
+    background-color: var(--table-header);
+    color: var(--text-accent);
+}
+
+td {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid var(--background-secondary);
+}
+
+tr:nth-child(even){ background-color: var(--table-row-even) }
+tr:nth-child(odd){ background-color: var(--table-row-odd) }
+tr:hover { background-color: var(--table-hover); }
+  
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border);
+}
+
+.HyperMD-table-row
+{
+    line-height: normal;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* background-color: var(--pre-code); */
+}
+
+.HyperMD-table-row-0
+{
+    /* padding-top: 4px; */
+}
+
+.CodeMirror-foldgutter-folded,
+.is-collapsed .nav-folder-collapse-indicator
+{
+    color: var(--text-a);
+}
+
+.nav-file-tag
+{
+    color: var(--text-a);
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a);
+    background-color: var(--background-primary-alt);
+}
+
+.nav-file-title
+{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+body.theme-dark .cm-line.HyperMD-list-line,
+body.theme-light .cm-line.HyperMD-list-line,
+body.theme-dark .cm-line.HyperMD-task-line,
+body.theme-light .cm-line.HyperMD-task-line
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cm-hashtag-begin
+{
+    color: var(--text-tag);
+    background-color: var(--background-secondary-alt);
+    padding: 2px 0 2px 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-decoration: none;
+}
+
+.cm-hashtag-end
+{
+    color: var(--text-tag);
+    background-color: var(--background-secondary-alt);
+    padding: 2px 4px 2px 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-decoration: none;
+}
+
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    text-decoration: underline;
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code
+{
+    font-size: 0.9em;
+    background-color: var(--pre-code);
+}
+
+.markdown-preview-section pre code
+{
+    padding: 4px;
+    line-height: 1.4em;
+    display: block;
+    color: var(--code-block);
+}
+
+body.theme-dark .markdown-rendered :not(pre) > code,
+body.theme-light .markdown-rendered :not(pre) > code,
+body.theme-dark .markdown-preview-section :not(pre) > code,
+body.theme-light .markdown-preview-section :not(pre) > code
+{
+    color: var(--inline-code);
+}
+
+.cm-s-obsidian,
+.cm-inline-code
+{
+    -webkit-font-smoothing: auto;
+}
+
+body.theme-dark .cm-line .cm-inline-code,
+body.theme-light .cm-line .cm-inline-code
+{
+    color: var(--inline-code);
+    background-color: var(--pre-code);
+    padding: 1px;
+}
+
+.workspace-leaf-header-title
+{
+    font-weight: 600;
+}
+
+.side-dock-title
+{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.side-dock
+{
+    border-right: 0;
+}
+
+/* vertical resize-handle */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle
+{
+    width: 1px;
+    background-color: var(--background-secondary-alt);
+}
+
+/* horizontal resize-handle */
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
+{
+    height: 1px;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Remove vertical split padding */
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs
+{
+    padding-right: 0px;
+}
+
+.markdown-embed-title
+{
+    font-weight: 600;
+}
+
+.markdown-embed
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cm-header-1.cm-link,
+h1 a
+{
+    color: var(--text-title-h1);
+}
+
+.cm-header-2.cm-link,
+h2 a
+{
+    color: var(--text-title-h2);
+}
+
+.cm-header-3.cm-link,
+h3 a
+{
+    color: var(--text-title-h3);
+}
+.cm-header-4.cm-link,
+h4 a
+{
+    color: var(--text-title-h4);
+}
+.cm-header-5.cm-link,
+h5 a
+{
+    color: var(--text-title-h5);
+}
+.cm-header-6.cm-link,
+h6 a
+{
+    color: var(--text-title-h6);
+}
+
+.cm-header {
+    font-weight: 500;
+}
+
+.HyperMD-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500;
+    font-size: 2.2em;
+    color: var(--text-title-h1);
+}
+
+.HyperMD-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500;
+    font-size: 2.0em;
+    color: var(--text-title-h2);
+    /* text-transform: uppercase; */
+
+}
+
+.HyperMD-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500;
+    font-size: 1.8em;
+    color: var(--text-title-h3);
+}
+
+.HyperMD-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--text-title-h4);
+}
+
+.HyperMD-header-5,
+.markdown-preview-section h5
+{
+    font-weight: 500;
+    font-size: 1.4em;
+    color: var(--text-title-h5);
+}
+
+.HyperMD-header-6,
+.markdown-preview-section h6
+{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--text-title-h6);
+}
+
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
+.empty-state-action:hover
+{
+    color: var(--interactive-accent);
+}
+
+.checkbox-container
+{
+    background-color: var(--interactive-before);
+}
+
+.checkbox-container:after
+{
+    background-color: var(--background-secondary-alt);
+}
+
+.mod-cta
+{
+    color: var(--background-secondary-alt);
+    font-weight: 600;
+}
+
+.mod-cta a
+{
+    color: var(--background-secondary-alt);
+    font-weight: 600;
+}
+
+.mod-cta:hover
+{
+    background-color: var(--interactive-before);
+    font-weight: 600;
+}
+
+.CodeMirror-cursor
+{
+    background-color: var(--vim-cursor-background);
+    color: var(--vim-cursor-color);
+    opacity: 60%;
+}
+
+input.task-list-item-checkbox {
+    border: 1px solid var(--task-checkbox);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked
+{
+    background-color: var(--task-checkbox);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+::selection
+{
+    background-color: var(--text-selection);
+}
+
+.mermaid .note
+{
+    fill: var(--background-secondary-alt);
+}
+.cm-line .cm-strong
+{
+    color: var(--bold-color);
+}
+
