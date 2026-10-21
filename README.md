@@ -4,15 +4,17 @@ This is a **Fireplace** theme for [Obsidian](https://obsidian.md/). The color pa
 Installation: Simply search `Fireplace` in the Obsidian Community Themes and Install. Or if manually, copy the `theme.css` file to `.obsidian/themes/Fireplace/` in your vault directory and reload Obsidian for it to take effect.
 
 ## Dark Mode
-<!-- ![](dark_high.png) -->
+![](dark_high.png)
 
 ## Light Mode (Hearth on warm paper)
-<!-- ![](light_high.png) -->
+![](light_high.png)
 
 ## Based on these Photos
 The dark palette is extracted from these pictures, which I use as desktop backgrounds in Omarchy:
 
+Main shot:
 ![](backgrounds/cce1041.jpg)
+Close-up shot:
 ![](backgrounds/cce1130_fotoprojekt_glut_nahem.jpg)
 
 ### Color Palette
